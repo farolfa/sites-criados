@@ -49,6 +49,53 @@ body{
     main section{
         padding-top: 10px;
     }
+    .sites{  
+        display: flex;
+        margin: 10px auto;
+        background-color:#025928 ;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 10px;
+        max-width:716px ;
+
+    }
+    .sites a{
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        background-color:#01260E ;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    .sites img{
+        margin-top: 10px;
+        height: 300px;
+        border-radius: 10px;
+        
+    }
+    footer{
+        background-color: #03A65A;
+        padding: 10px;
+        text-align: center;
+    }
+    /*media queries */
+    @media screen and (max-width: 524px) and (min-width:440px){
+        .sites img{
+            height: 250px;
+        }
+    }
+    @media screen and (max-width:439px) and (min-width:380px){
+        .sites img{
+            height: 210px;
+        }
+    }
+    @media screen and (max-width:379px){
+        .sites img{
+            height: 150px;
+        }
+    }
 </style>
 
 <body>
@@ -57,20 +104,34 @@ body{
     <h1>Repositorios Farolfa </h1>
 </section>   
 
-<section id="head2"><img height="50" src="imagens/github-logo.png" alt=""> <h1>github</h1></section>
+<section id="head2"><img height="50" src="imagens/github-logo.png" alt=""> <a href="">
+    <h1>github</h1>
+</a></section>
 
 </header>
     <main>
         <section>
-                <h1>links de todos os sites</h1>
+                <h1>Links de todos os sites</h1>
                 <p>👋olá  aqui ficará todos os sites que fiz ou estou fazendo até o atual momento</p>
+                <p>( Do mais recente ao mais antigo )</p>
         </section>
         <section>
-            <div class=""></div>
+
+            <div class="sites"><img src="imagens/foto-login-netflix.png" alt=""><a href="https://netflix-clone-fake.vercel.app/" target="_blank">Site Netflix clone fake usando bootstrap</a> <a href="https://github.com/farolfa/Netflix-clone-fake">Repositorio</a></div>
+
+            <div class="sites"><img src="imagens/foto-kell-modas.png" alt=""><a href="https://site-kell-modas.vercel.app/" target="_blank">Site Use Kell Modas (em desenvolvimento...)</a><a href="https://github.com/farolfa/site-kell-modas" target="_blank">repositorio</a></div>
+            
+            <div class="sites"><img src="imagens/foto-projeto-android.png" alt=""><a href="https://projeto-android-pi.vercel.app/" target="_blank">Site Projeto-login</a><a href="https://github.com/farolfa/projeto-android" target="_blank">repositorio</a></div>
+
+            <div class="sites"><img src="imagens/foto-cordel.png" alt=""><a href="https://projeto-cordel-flame.vercel.app/" target="_blank">Site Projeto Cordel</a><a href="https://github.com/farolfa/projeto-cordel" target="_blank">repositorio</a></div>
+
+            <div class="sites"><img src="imagens/foto-login.png" alt=""><a href="https://projeto-login-vert.vercel.app/" target="_blank">Site login</a><a href="https://github.com/farolfa/projeto-login" target="_blank">repositorio</a></div>
+            
+
         </section>
     </main>
     <footer>
-
+        @ Site desenvolvido por Raul Lopes Gonçalves
     </footer>
 </body>
 </html>
